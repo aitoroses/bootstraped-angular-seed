@@ -5,7 +5,7 @@
 - Font-Awesome ([Font-Awesome](http://fortawesome.github.io/Font-Awesome/))
 - A simple production Node.js server ready to deploy on heroku: ___web.js___
 
-You can check a [demo](http://bootstrap-angular-demo.herokuapp.com/) working.
+You can check a [demo](http://bootstraped-angular-demo.nodejitsu.com/) working.
 
 ===
 
