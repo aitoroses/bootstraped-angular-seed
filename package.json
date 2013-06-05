@@ -1,0 +1,30 @@
+{
+  "name": "bootstraped-angular-seed",
+  "version": "0.1.0",
+  "description": "A bootstraped version of angular-seed for fast makeing webapps",
+  "main": "web.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "~3.2.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aitoroses/bootstraped-angular-seed.git"
+  },
+  "keywords": [
+    "angular",
+    "node",
+    "express",
+    "bootstrap"
+  ],
+  "author": "Grayfox",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "dc717ac00ad939d48405cb3a7e7b902392850276"
+}

@@ -1,3 +1,16 @@
+## This repository is based on the original [angular-seed](https://github.com/angular/angular-seed) but comes with some bootstrap improvements ready to go for fast building Webapps.
+
+- UI-Bootstrapp directives ([UI-Bootstrap](http://angular-ui.github.io/bootstrap/))
+- Twitter Bootstrap CSS's ([Bootstrap](http://twitter.github.io/bootstrap/))
+- Font-Awesome ([Font-Awesome](http://fortawesome.github.io/Font-Awesome/))
+- A simple production Node.js server ready to deploy on heroku: ___web.js___
+
+###TODOs
+- [ ] Add bootstraped animations to the views
+
+===
+
+
 # angular-seed — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
