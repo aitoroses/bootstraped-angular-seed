@@ -10,9 +10,10 @@
  var PORT = process.env.PORT | 5000;
 
  app.configure(function(){
- 	//app.use(express.bodyParser());
- 	//app.use(express.methodOverride());
- 	//app.use(express.static(__dirname +'/app'));
+ 	app.use(express.bodyParser());
+ 	app.use(express.methodOverride());
+ 	app.use(express.static(__dirname +'/app'));
+ 	console.log('static is on ' + __dirname +'/app');
  	app.use(app.router);
  });
 
