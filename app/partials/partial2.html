@@ -1,4 +1,10 @@
 <p>This is the partial for view 2.</p>
-  Showing of 'interpolate' filter:
+<p>Showing of 'interpolate' filter:
   {{ 'Current version is v%VERSION%.' | interpolate }}
 </p>
+
+<div data-ng-switch="wave" data-ng-animate="'wave'">
+  <div ng-switch-when="one">ONE</div>
+  <div ng-switch-when="two">TWO</div>
+  <div ng-switch-when="three">THREE</div>
+</div>
