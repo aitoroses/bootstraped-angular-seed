@@ -24,6 +24,10 @@
 // 	res.sendfile(__dirname + 'app/index.html');
 // });
 
+app.get('/test', function(req, res){
+	res.send(200);
+});
+
 app.get('*', function(req, res){
 	res.sendfile(__dirname + '/app/index.html');
 });
