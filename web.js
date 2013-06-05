@@ -10,9 +10,9 @@
  var PORT = process.env.PORT | 5000;
 
  app.configure(function(){
- 	app.use(express.bodyParser());
+ 	//app.use(express.bodyParser());
  	//app.use(express.methodOverride());
- 	app.use(express.static(__dirname +'/app'));
+ 	//app.use(express.static(__dirname +'/app'));
  	app.use(app.router);
  });
 
@@ -22,6 +22,11 @@
 // 	console.log('Serving the index');
 // 	res.sendfile(__dirname + 'app/index.html');
 // });
+
+app.get('/test', function(req, res){
+	console.log('Just for testing /test');
+	res.send(200));
+});
 
 app.listen(PORT, function(){
 	console.log("Server started and listening on " + PORT);
