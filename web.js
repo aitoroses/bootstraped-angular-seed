@@ -3,9 +3,6 @@
  */
 
  var express = require('express');
- var path = require('path');
-
-
  var app = express();
 
  // Configuration
@@ -21,9 +18,10 @@
 
 // Route
 
-app.get('/', function(req, res){
-	res.sendfile(__dirname + 'app/index.html');
-});
+// app.get('/', function(req, res){
+// 	console.log('Serving the index');
+// 	res.sendfile(__dirname + 'app/index.html');
+// });
 
 app.listen(PORT, function(){
 	console.log("Server started and listening on " + PORT);
