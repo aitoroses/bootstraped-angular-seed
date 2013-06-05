@@ -1,37 +1,34 @@
-/**
- * Module Dependencies
- */
+/* Module Dependencies
+*/
 
- var express = require('express');
- var app = express();
+var PORT, app, express;
 
- // Configuration
+express = require('express');
 
- var PORT = process.env.PORT | 5000;
+app = express();
 
- app.configure(function(){
- 	app.use(express.bodyParser());
- 	app.use(express.methodOverride());
- 	app.use(express.static(__dirname +'/app'));
- 	console.log('static is on ' + __dirname +'/app');
- 	app.use(app.router);
- });
+PORT = process.env.PORT | 5000;
 
-// Route
-
-// app.get('/', function(req, res){
-// 	console.log('Serving the index');
-// 	res.sendfile(__dirname + 'app/index.html');
-// });
-
-app.get('/test', function(req, res){
-	res.send(200);
+app.configure(function() {
+  app.use(express.bodyParser());
+  app.use(express.methodOverride());
+  app.use(express.static("" + __dirname + "/app"));
+  console.log('static is on ' + ("" + __dirname + "/app"));
+  return app.use(app.router);
 });
 
-app.get('*', function(req, res){
-	res.sendfile(__dirname + '/app/index.html');
+/* Routes
+*/
+
+
+app.get('/test', function(req, res) {
+  return res.send(200);
 });
 
-app.listen(PORT, function(){
-	console.log("Server started and listening on " + PORT);
+app.get('*', function(req, res) {
+  return res.sendfile(__dirname + ("" + __dirname + "/app/index.html"));
+});
+
+app.listen(PORT, function() {
+  return console.log("Server started and listening on " + PORT);
 });

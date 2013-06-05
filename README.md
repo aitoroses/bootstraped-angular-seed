@@ -7,9 +7,6 @@
 
 You can check a [demo](http://bootstrap-angular-demo.herokuapp.com/) working.
 
-###TODOs
-- Add bootstraped animations to the views
-
 ===
 
 
