@@ -14,6 +14,7 @@ app.configure ->
     app.use express.static("#{__dirname}/app")
     console.log 'static is on ' + "#{__dirname}/app"
     app.use app.router
+    return
 
 
 ### Routes ###
@@ -25,10 +26,13 @@ app.configure ->
 
 app.get '/test', (req, res) ->
     res.send 200
+    return
 
 
 app.get '*', (req, res) ->
-    res.sendfile __dirname + "#{__dirname}/app/index.html"
+    res.sendfile "#{__dirname}/app/index.html"
+    return
 
 app.listen PORT, ->
     console.log "Server started and listening on #{PORT}"
+    return
