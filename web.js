@@ -15,17 +15,9 @@
  app.configure(function(){
  	app.use(express.bodyParser());
  	app.use(express.methodOverride());
- 	app.use(express.static(path.join(__dirname, 'app')));
+ 	app.use(express.static(__dirname +'/app'));
  	app.use(app.router);
  });
-
- app.configure('development', function(){
-  app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
-});
-
-app.configure('production', function(){
-  app.use(express.errorHandler());
-});
 
 // Route
 
