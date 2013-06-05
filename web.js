@@ -26,7 +26,7 @@
 
 app.get('/test', function(req, res){
 	console.log('Just for testing /test');
-	res.send(200));
+	res.send(200);
 });
 
 app.listen(PORT, function(){
